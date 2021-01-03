@@ -1,0 +1,65 @@
+.l-header {
+    background: url(../img/hero/m-underwater.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .wrap {
+        padding-top: 8rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .dot-menu {
+            display: flex;
+            padding-top: 1.4rem;
+
+            div {
+                width: 2rem;
+                height: 2rem;
+                margin: 0 0.1rem;
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    background: $white;
+                    position: absolute;
+                    top: 0.5rem;
+                    left: 0.5rem;
+
+                    transition: all 0.4s ease-out;
+                }
+            }
+
+            .is-active {
+                &::after {
+                    background: $yellow;
+                }
+            }
+        }
+    }
+}
+
+@include respond(tab) {
+    .l-header {
+        .wrap {
+            max-width: 85%;
+        }
+    }
+}
+
+@include respond(pc) {
+    .l-header {
+        .wrap {
+            max-width: 1100px;
+            align-items: flex-start;
+            text-align: left;
+            padding-right: 400px;
+        }
+    }
+}

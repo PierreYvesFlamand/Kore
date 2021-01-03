@@ -1,0 +1,60 @@
+.m-contact {
+    background: $content-bg-2;
+
+    .wrap {
+        padding-bottom: 8rem;
+
+        input,
+        textarea {
+            color: #04070c;
+            background: $input-bg;
+            border: none;
+            border-radius: 0.3rem;
+            width: 100%;
+            font-weight: 600;
+            padding: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        textarea {
+            height: 14rem;
+        }
+
+        input[type="submit"] {
+            background: $yellow;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 0.1rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: $content-bg-2;
+                color: $yellow;
+                border: 2px solid $yellow;
+            }
+        }
+
+        h3 {
+            padding: 1.2rem 0;
+
+            &::after {
+                content: "";
+            }
+        }
+    }
+}
+
+@include respond(tab) {
+    .m-contact {
+        .wrap-2:nth-child(1) {
+            padding-right: 1.5rem;
+        }
+
+        .wrap-2:nth-child(2) {
+            padding-left: 1.5rem;
+        }
+    }
+}

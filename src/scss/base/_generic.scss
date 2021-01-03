@@ -1,0 +1,114 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body,
+textarea,
+input {
+    font-family: 'Martel', serif;
+}
+
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $yellow;
+    border: 0;
+    border-radius: 50px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: $white;
+    position: relative;
+    padding-bottom: 3rem;
+
+    &::before {
+        content: '';
+        width: 6rem;
+        position: absolute;
+        bottom: 1.5rem;
+        left: calc(50% - 3rem);
+        border: 2px solid $yellow;
+        border-radius: 0.1rem;
+    }
+}
+
+h2 {
+    color: $white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+    position: relative;
+
+    &::after {
+        content: '.';
+        color: $yellow;
+    }
+
+    &::before {
+        content: '';
+        width: 6rem;
+        position: absolute;
+        bottom: 2rem;
+        left: calc(50% - 3rem);
+        border: 2px solid #283436;
+        border-radius: 0.1rem;
+    }
+}
+
+h3 {
+    color: $yellow;
+    font-size: 1.2rem;
+    padding: 3.2rem 0 1.6rem 0;
+
+    &::after {
+        content: '.';
+    }
+}
+
+h4 {
+    color: $white;
+    font-size: 0.8rem;
+}
+
+p {
+    color: $gray;
+}
+
+@include respond(tab) {
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    h2 {
+        text-align: left;
+
+        &::before {
+            left: 0;
+        }
+    }
+}
+
+@include respond(pc) {
+    h1 {
+        &:before {
+            left: 0;
+        }
+    }
+}

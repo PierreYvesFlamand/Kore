@@ -1,0 +1,18 @@
+.m-about {
+    background: $content-bg-3;
+
+    .wrap {
+        padding-bottom: 0;
+    }
+}
+
+@include respond(tab) {
+    .m-about {
+        .wrap-2:nth-child(2n + 1) {
+            padding-right: 1.5rem;
+        }
+        .wrap-2:nth-child(2n) {
+            padding-left: 1.5rem;
+        }
+    }
+}

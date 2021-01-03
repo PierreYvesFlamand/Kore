@@ -1,0 +1,16 @@
+/* MEDIA QUERY */
+@mixin respond($breakpoint) {
+    // * TAB
+    @if $breakpoint == tab {
+        @media screen and (min-width: 580px) {
+            @content;
+        }
+    }
+
+    // * PC
+    @if $breakpoint == pc {
+        @media screen and (min-width: 1000px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css?family=Martel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900&display=swap");
+
+// Abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// Base
+@import "./base/reset";
+@import "./base/generic";
+@import "./base/grid";
+
+// Layout
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/main";
+@import "./layout/footer";
+
+// Modules
+@import "./modules/projects";
+@import "./modules/services";
+@import "./modules/about";
+@import "./modules/team";
+@import "./modules/testimonial";
+@import "./modules/contact";
+

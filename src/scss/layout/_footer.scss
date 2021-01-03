@@ -1,0 +1,84 @@
+.l-footer {
+    background: $footer-bg;
+
+    .wrap {
+        padding: 4rem 2.6rem 1rem 2.6rem;
+        position: relative;
+        text-align: center;
+
+        p {
+            color: rgba($color: $gray, $alpha: 0.45);
+        }
+
+        .fast-link {
+            top: -1.6rem;
+            bottom: auto;
+        }
+
+        .socials-links {
+            position: relative;
+            padding-bottom: 2rem;
+
+            a {
+                color: rgba($color: $gray, $alpha: 0.45);
+                text-decoration: none;
+                font-size: 1.5rem;
+                padding: 0.3rem;
+                margin: 0.1rem;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+
+            &:before {
+                content: "";
+                width: 13rem;
+                position: absolute;
+                bottom: 0;
+                left: calc(50% - 6.5rem);
+                border-bottom: 1px solid rgba($color: $gray, $alpha: 0.45);
+            }
+        }
+
+        .footer-logo {
+            padding: 2rem 0 1rem 0;
+            font-size: 2rem;
+            letter-spacing: 0.1rem;
+            text-align: center;
+        }
+
+        .copy {
+            padding: 3rem 0 1rem 0;
+        }
+    }
+}
+
+@include respond(tab) {
+    .l-footer {
+        .wrap {
+            max-width: 80%;
+
+            .socials-links {
+                a {
+                    padding: 0.3rem 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@include respond(pc) {
+    .l-footer {
+        .wrap {
+            max-width: 650px;
+        }
+
+        .fast-link,
+        .fast-link:link,
+        .fast-link:visited,
+        .fast-link:active {
+            left: calc(50% - 6.5rem);
+        }
+    }
+}

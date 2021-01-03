@@ -1,0 +1,31 @@
+.m-services {
+    background: $content-bg-2;
+}
+
+@include respond(tab) {
+    .m-services {
+        .wrap-2:nth-child(2n + 1) {
+            padding-right: 1.5rem;
+        }
+        .wrap-2:nth-child(2n) {
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+@include respond(pc) {
+    .m-services {
+        .wrap-2 {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .wrap-2:nth-child(3n) {
+            padding-right: 0;
+        }
+
+        .wrap-2:nth-child(3n + 1) {
+            padding-left: 0;
+        }
+    }
+}

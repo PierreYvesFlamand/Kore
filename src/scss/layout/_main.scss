@@ -1,0 +1,63 @@
+.fast-link,
+.fast-link:link,
+.fast-link:visited,
+.fast-link:active {
+    color: $white;
+    text-transform: uppercase;
+    background: $orange;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.2rem;
+    width: 13rem;
+    border-radius: 0.3rem;
+
+    position: absolute;
+    bottom: -1.6rem;
+    left: calc(50% - 6.5rem);
+
+    transition: all 0.3s ease-in-out;
+
+    i {
+        padding-left: 0.6rem;
+    }
+}
+
+.fast-link:hover {
+    color: $orange;
+    background: $white;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.head-text {
+    text-align: center;
+}
+
+@include respond(tab) {
+    .head-text {
+        text-align: left;
+    }
+}
+
+@include respond(pc) {
+    .fast-link,
+    .fast-link:link,
+    .fast-link:visited,
+    .fast-link:active {
+        left: calc(75% - 6.5rem);
+    }
+
+    @media screen and (min-width: 1148px) {
+        .wrap {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
