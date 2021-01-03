@@ -1,6 +1,6 @@
 # Kore
 
-## [Check the Demo](pierreyvesflamand.github.io/kore/build)
+## [Check the Demo](https://pierreyvesflamand.github.io/Kore/build)
 
 ## How to run locally
 
