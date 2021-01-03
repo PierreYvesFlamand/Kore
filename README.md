@@ -1,4 +1,4 @@
-#Kore
+# Kore
 
 ## [Check the Demo](pierreyvesflamand.github.io/kore/build)
 
