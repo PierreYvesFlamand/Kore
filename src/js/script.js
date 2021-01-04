@@ -31,6 +31,8 @@ window.onscroll = () => {
     }
 };
 
+console.log('hey');
+
 // Testimonial Carousel
 const testi_dots = [document.querySelector('.testi-dot-0'), document.querySelector('.testi-dot-1')];
 var current_testi_dot = testi_dots[0];

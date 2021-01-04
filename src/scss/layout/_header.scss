@@ -1,5 +1,5 @@
 .l-header {
-    background: url(../img/hero/m-underwater.jpg) center center no-repeat;
+    background: url(../img/hero-bg.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
 
@@ -41,6 +41,10 @@
                     background: $yellow;
                 }
             }
+        }
+
+        p {
+            color: $white;
         }
     }
 }

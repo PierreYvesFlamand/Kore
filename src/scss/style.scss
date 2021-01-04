@@ -1,27 +1,42 @@
+// unsplash thanks
+/*
+https://unsplash.com/photos/hS9TjplCx10?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/-oKXhngo3X4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/oh7BwFw07cw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/Pt3EqJD9Y38?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/Lq2051y3dBo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/qAoV3aL6g6g?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/lAtB1MVe3S0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/mk7D-4UCfmg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/fIq0tET6llw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/7Z03R1wOdmI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/asOAwm7fNdc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/-RRvMkEsQck?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+*/
+
 // Google Font
-@import url("https://fonts.googleapis.com/css?family=Martel&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Alegreya:900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Martel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya:900&display=swap');
 
 // Abstracts
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@import './abstracts/variables';
+@import './abstracts/mixins';
 
 // Base
-@import "./base/reset";
-@import "./base/generic";
-@import "./base/grid";
+@import './base/reset';
+@import './base/generic';
+@import './base/grid';
 
 // Layout
-@import "./layout/header";
-@import "./layout/nav";
-@import "./layout/main";
-@import "./layout/footer";
+@import './layout/header';
+@import './layout/nav';
+@import './layout/main';
+@import './layout/footer';
 
 // Modules
-@import "./modules/projects";
-@import "./modules/services";
-@import "./modules/about";
-@import "./modules/team";
-@import "./modules/testimonial";
-@import "./modules/contact";
-
+@import './modules/projects';
+@import './modules/services';
+@import './modules/about';
+@import './modules/team';
+@import './modules/testimonial';
+@import './modules/contact';
