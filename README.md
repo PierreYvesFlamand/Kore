@@ -2,8 +2,21 @@
 
 ## [Check the Demo](https://pierreyvesflamand.github.io/Kore/build)
 
-## How to run locally
+## Available Scripts
 
-1. **npm install**
-    1. **npm run start** - Run a local server
-    2. **npm run build** - Build a production build
+In the project directory, you can run:
+
+### `npm install`
+
+Installs all needed node modules.
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.
