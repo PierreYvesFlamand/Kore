@@ -5,7 +5,8 @@
         padding-bottom: 8rem;
 
         input,
-        textarea {
+        textarea,
+        button {
             color: #04070c;
             background: $input-bg;
             border: none;
@@ -20,7 +21,7 @@
             height: 14rem;
         }
 
-        input[type="submit"] {
+        button {
             background: $yellow;
             text-transform: uppercase;
             font-size: 1.1rem;
@@ -41,7 +42,7 @@
             padding: 1.2rem 0;
 
             &::after {
-                content: "";
+                content: '';
             }
         }
     }
